@@ -46,7 +46,7 @@ else:
         image = Image.open(args.input)
     except:
         parser.error("unable to open file")
-        exit(1)
+        
 image_array = array(image.getdata())
 
 width = image.size[0]
